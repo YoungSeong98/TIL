@@ -1,3 +1,3 @@
 a = input()
 
-print(a.upper())a
+print(a.upper())
