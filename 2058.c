@@ -3,12 +3,12 @@
 
 main()
 {
-	int a, b, result;
+	int receive_number, result;
 
 	printf("Enter a number :");
-	scanf("%d", &a);
+	scanf("%d", &receive_number);
 
-	result = (a / 1000) + (a % 1000) / 100 + (a % 100) / 10 + a % 10;
+	result = (receive_number / 1000) + (receive_number % 1000) / 100 + (receive_number % 100) / 10 + receive_number % 10;
 
 	printf("%d\n", result);
 }
