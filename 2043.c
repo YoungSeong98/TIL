@@ -5,7 +5,7 @@ main()
 {
 	int a, b, c = 0;
 
-	printf("번호 두개를 입력하세요 :");
+	printf("Enter a password and a number :");
 	scanf("%d %d", &b, &a);
 
 	while (b - a >= 0)
