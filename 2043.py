@@ -6,11 +6,3 @@ while password - input >= 0 :
     input += 1
 
 print(number_of_times)
-
-
-# first_number, second_number = map(int, input().split())
-
-# print(first_number + second_number)
-# print(first_number - second_number)
-# print(first_number * second_number)
-# print(first_number // second_number)
