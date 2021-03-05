@@ -1,3 +1,5 @@
+# 10개의 수를 입력받아, 그 중에서 가장 큰 수를 출력하여라
+
 # Case 1 - C언어 방식으로 표현한 최대값 구하기. bubble sort 방식으로 list의 index들을 일일히 비교해가며 가장 큰 수를 찾기
 Test_number = int(input())
 

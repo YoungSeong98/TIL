@@ -1,3 +1,5 @@
+// 10개의 수를 입력받아, 그 중에서 가장 큰 수를 출력하여라
+
 #include <stdio.h>
 #pragma warning (disable:4996)
 

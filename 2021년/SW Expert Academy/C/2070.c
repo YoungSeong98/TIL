@@ -1,3 +1,5 @@
+// 2개의 수를 입력 바아 크기를 비교하여 등호 또는 부등호를 출력하는 프로그램을 작성하라
+
 #include <stdio.h>
 #pragma warning (disable:4996)
 

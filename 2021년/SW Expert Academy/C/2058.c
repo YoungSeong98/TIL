@@ -1,3 +1,5 @@
+// 하나의 자연수를 입력받아 각 자릿수의 합을 계산하여라
+
 #include <stdio.h>
 #pragma warning (disable:4996)
 
