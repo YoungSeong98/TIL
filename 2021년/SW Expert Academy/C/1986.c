@@ -9,15 +9,16 @@
 
 main()
 {
-	int test_case, number, result = 0, i, j;
+	int test_case, times, result = 0, number, i, j;
 
-	printf("Enter a test case :");
+	printf("Enter a test case : ");
 	scanf("%d", &test_case);
 
 	for (i = 0; i < test_case; i++) {
 		printf("Enter a number : ");
 		scanf("%d", &number);
-		for (j = 0; j < number; j++) {
+		times = number;
+		for (j = 0; j < times; j++) {
 			if (number % 2 == 0) {
 				result -= number;
 				--number;
