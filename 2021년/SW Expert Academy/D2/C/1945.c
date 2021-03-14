@@ -15,6 +15,8 @@ main()
 {
 	int test_case, number, a = 0, b = 0, c = 0, d = 0, e = 0, i;
 
+	// a ~ e 까지의 정의들을 for문 안에 넣으면 for문의 시작시마다 각 값들을 0으로 초기화 해줄 수 있다
+
 	printf("Enter a test case:");
 	scanf("%d", &test_case);
 
@@ -23,33 +25,33 @@ main()
 		scanf("%d", &number);
 
 		while (number % 2 == 0) {
-			if (number == 1)
+			if (number == 1)  // 1 % 2 = 1 이므로 불필요한 구문이다
 				break;
 			a++;
 			number /= 2;
 		}
 		while (number % 3 == 0) {
-			if (number == 1)
+			if (number == 1)  // 1 % 3 = 1 이므로 불필요한 구문이다
 				break;
 			b++;
 			number /= 3;
 		}while (number % 5 == 0) {
-			if (number == 1)
+			if (number == 1)  // 1 % 5 = 1 이므로 불필요한 구문이다
 				break;
 			c++;
 			number /= 5;
 		}while (number % 7 == 0) {
-			if (number == 1)
+			if (number == 1)  // 1 % 7 = 1 이므로 불필요한 구문이다
 				break;
 			d++;
 			number /= 7;
 		}while (number % 11 == 0) {
-			if (number == 1)
+			if (number == 1)  // 1 % 11 = 1 이므로 불필요한 구문이다
 				break;
 			e++;
 			number /= 11;
 		}
 		printf("#%d %d %d %d %d %d", i + 1, a, b, c, d, e);
-		a = 0, b = 0, c = 0, d = 0, e = 0;
+		a = 0, b = 0, c = 0, d = 0, e = 0;  // a ~ e 까지의 정의들을 for문 안에 넣으면 for문의 시작시마다 각 값들을 0으로 초기화 해줄 수 있다
 	}
 }
