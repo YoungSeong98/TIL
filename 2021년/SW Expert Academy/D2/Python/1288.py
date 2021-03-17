@@ -18,8 +18,7 @@ for x in range(1, test_case+1):
         room = str(room)
         
         for c in room:                          # python은 직관적인 조건문 사용이 가능
-            if c in zero_to_nine:
-                zero_to_nine.remove(c)          # zero_to_nine에서 
+            if c in zero_to_nine:               # room에 있는 c가 zero_to_nine에도 있을 시 
+                zero_to_nine.remove(c)          # zero_to_nine에서 그 수를 제거함
                 
     print('#{} {}'.format(x, room))
-    
