@@ -12,21 +12,21 @@
 test_case = int(input())
 
 for i in range (test_case):
-    a_use = 0
+    a_use = 0                       # 불필요한 문장                      
     b_use = 0
     a_fee, b_min, b_std, b_add, water_use  = map(int, input().split())
 
     a_use = water_use * a_fee
 
-    if water_use <= b_std:
-        b_use = b_min
-    else:
+    if water_use <= b_std:          # b_use = b_min         
+        b_use = b_min               # if water_use > b_std
+    else:                           # b_use += (water_use - b_std) * b_add 로 간단화 할 수 있다
         b_use = b_min + (water_use - b_std) * b_add
     
-    if a_use > b_use:
-        print(f'#{i+1} {b_use}')
+    if a_use > b_use:               # cost = min(a_use, b_use)
+        print(f'#{i+1} {b_use}')    # print(cost) 로 간단화 할 수 있다
     elif a_use < b_use:
         print(f'#{i+1} {a_use}')
 
-    
+
 
